@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>untitled</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
+    <!-- дуже важлива штучка вверху цей прелоадер шрифтів -->
+
+    <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/jquery.beefup.css" /> -->
+
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/jquery.beefup.css" />
+    <!-- <link rel="stylesheet" href="css/libs.min.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- section>.container>.row>.col  -->
+
+  <body>
+    <!-- fixed nav for mobile https://codepen.io/emjay/pen/OJrMjad/56b17e4f104193f5beba7a6bbbd30926 -->
+    <nav class="main-nav">
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="" />
+      </a>
+      <!-- <div class="logo-text">src</div> -->
+      <ul class="main-menu">
+        <li><a href="#"> Головна</a></li>
+        <li><a href="#" class="menu-spec-link"> Оренда</a></li>
+        <li><a href="#change" class="scroll-to"> Підмінне авто</a></li>
+        <li><a href="#term" class="scroll-to"> Лізинг</a></li>
+        <li><a href="#contact" class="scroll-to"> Контакти</a></li>
+      </ul>
+      <div class="nav-offer">
+        <a href="tel:" class="header-phone">+38 (097) 275 9 275 </a>
+
+        <button class="call-me-back open-popup" data-src="#consl-popup">Замовити дзвінок</button>
+      </div>
+    </nav>
+
+    <header class="main-header">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="img/road.png" alt="" class="header-road absolute" />
+
+            <h1 class="main-title header-ani"><strong>Відчуйте перевагу SRC</strong> <br />спеціалізований прокат <br />без зайвих зусиль</h1>
+            <div class="header-offer header-ani">
+              <div class="custom-text">
+                <p>Наша місія - продемонструвати людям та організаціям <strong style="color: #066bcf">переваги оренди авто над лізингом.</strong></p>
+                <p>
+                  Ми хочемо показати це своїм клієнтоорієнтованим та якісним сервісом, зрозумілими та простими тарифами, і також зручними та гнучкими угодами.
+                  <strong style="color: #066bcf">Вам треба лише сісти та їхати</strong>, а про все інше ми подбаємо
+                </p>
+              </div>
+
+              <div class="custom-btn-wrapper">
+                <button class="custom-btn">ОРЕНДА АВТО</button>
+              </div>
+            </div>
+            <img src="img/car.png" alt="" class="header-car absolute header-ani" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="after-header">
+      <div class="ellipse widescreen"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="ellipse smallscreen"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="why">
+      <!-- <div class="ellipse widescreen"></div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="img/term-car.png" alt="" class="why-car absolute" />
+            <!-- <div class="ellipse smallscreen"></div> -->
+            <div class="text-center">
+              <h2 class="title-white h2-title">
+                чому клієнти <br />
+                <strong>обирають саме нас</strong>
+              </h2>
+            </div>
+
+            <div class="why-box">
+              <div class="why-card">
+                <div class="why-card-img" style="background: url(img/why1.png) no-repeat center center / cover"></div>
+                <div class="why-card-text">
+                  <h3>Безтурботність</h3>
+                  <p>Забудьте про витрати на обслуговування, ремонт та страхування. Ми беремо всі ці клопоти на себе, щоб ви могли насолоджуватися керуванням автомобілем без зайвих турбот</p>
+                </div>
+              </div>
+              <div class="why-card">
+                <div class="why-card-img" style="background: url(img/why2.png) no-repeat center center / cover"></div>
+                <div class="why-card-text">
+                  <h3>Гнучкість</h3>
+                  <p>
+                    Вам не потрібно зобов'язуватися на довгий період. Виберіть той час, який вам потрібен - день, тиждень, місяць або більше. Ми готові задовольнити ваші потреби в будь-який момент
+                  </p>
+                </div>
+              </div>
+              <div class="why-card">
+                <div class="why-card-img" style="background: url(img/why3.png) no-repeat center center / cover"></div>
+                <div class="why-card-text">
+                  <h3>Асортимент</h3>
+                  <p>У нас є широкий вибір автомобілів для всіх смаків і бюджетів. Від економічних моделей до представницьких авто - у нас є все, що ви забажаєте</p>
+                </div>
+              </div>
+              <div class="why-card">
+                <div class="why-card-img" style="background: url(img/why4.png) no-repeat center center / cover"></div>
+                <div class="why-card-text">
+                  <h3>Комфорт</h3>
+                  <p>Відчуйте неймовірний комфорт та стиль, які надає авто останніх моделей. Наші автомобіліобладнані всіма необхідними зручностями, щоб зробити ваші поїздки незабутніми</p>
+                </div>
+              </div>
+              <div class="why-card">
+                <div class="why-card-img" style="background: url(img/why5.png) no-repeat center center / cover"></div>
+                <div class="why-card-text">
+                  <h3>Економія</h3>
+                  <p>Оренда авто - це економічний вибір у порівнянні з лізингом. Ви не тільки економите на початковому внеску, але й зменшуєте ризики пов'язані з володінням авто</p>
+                </div>
+              </div>
+              <div class="why-card">
+                <a href="#" class="why-link"> <span>Обрати авто</span> <img src="img/white-arrow-right.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/case-hand.png" alt="" class="why-hand absolute" />
+    </section>
+
+    <section class="change" id="change">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="change-inner">
+              <img src="img/change.png" alt="" class="change-img" />
+              <h2 class="h2-title change-ani">
+                <span class="gradient-dark">ПІДМІННЕ</span>
+                <strong> АВТО</strong>
+              </h2>
+
+              <div class="custom-text change-ani">
+                <p>Ваш комфорт та безпека є нашим пріоритетом, і саме тому ми представляємо послугу <strong style="color: #066bcf">"Підмінне Авто" від SRC.</strong></p>
+                <p>
+                  Цей унікальний сервіс призначений для того, щоб забезпечити вас <strong style="color: #066bcf">надійним та комфортним засобом пересування</strong> в разі виникнення непередбачених
+                  ситуацій.
+                </p>
+              </div>
+
+              <div class="sub change-extra change-ani">
+                <h3 class="gradient-blue">Що це означає?</h3>
+                <p>
+                  Коли ваше власне авто стає недоступним у зв'язку з ремонтом, технічною поломкою або страховим випадком, ми готові надати вам підмінний автомобіль для того, щоб ви могли продовжувати
+                  свої справи без стресів та затримок.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case">
+      <div class="ellipse-oval widescreen"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="ellipse-oval smallscreen"></div>
+
+            <div class="title-box">
+              <h2 class="h2-title">
+                <span class="gradient-dark">У яких випадках це</span>
+                <br />
+                <strong>може знадобитися?</strong>
+              </h2>
+
+              <div class="sub">
+                <p>Наш сервіс "Підмінне Авто" — це зручність та впевненість у будь-яких обставинах. Ми завжди поруч, готові забезпечити вас надійним та сучасним автомобілем.</p>
+              </div>
+            </div>
+
+            <div class="case-box">
+              <div class="case-card">
+                <div class="case-card-img" style="background: url(img/case1.png) no-repeat center center / cover"></div>
+                <div class="case-card-text">
+                  <h3>ДТП</h3>
+                  <p>
+                    В разі ДТП ми розуміємо, що врегулювання страхового випадку та ремонт може зайняти тривалий час. Наша послуга "Підмінне Авто" дозволяє вам залишатися мобільним протягом періоду
+                    відновлення вашого авто.
+                  </p>
+                </div>
+              </div>
+              <div class="case-card">
+                <div class="case-card-img" style="background: url(img/case2.png) no-repeat center center / cover"></div>
+                <div class="case-card-text">
+                  <h3>Технічна поломка</h3>
+                  <p>Якщо ваше авто вийшло з ладу та потрібен час на ремонт чи заміну деталей, ми маємо для вас зручний та надійний автомобіль.</p>
+                </div>
+              </div>
+              <div class="case-card">
+                <div class="case-card-img" style="background: url(img/case3.png) no-repeat center center / cover"></div>
+                <div class="case-card-text">
+                  <h3>Авто для бізнесу</h3>
+                  <p>
+                    Якщо виникла потреба в авто представницького класу для зустрічей делегацій, бізнес партнерів, тощо, або збільшення автопарку клієнта для вирішення оперативних завдань бізнесу -
+                    підмінне авто стане вашим тимчасовим порятунком.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <div class="custom-btn-wrapper">
+                <button class="custom-btn">Замовити підмінне авто</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="term" id="term">
+      <img src="img/term-hand.png" alt="" class="term-hand absolute" />
+      <div class="ellipse widescreen"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="ellipse smallscreen"></div>
+
+            <img src="img/term-car.png" alt="" class="term-car absolute" />
+            <div class="term-inner">
+              <h2 class="h2-title title-white title-spec term-title">
+                <strong>умови лізингу</strong> <br />
+                Передплата у розмірі 30% <br />
+                вартості об'єкта лізингу
+              </h2>
+
+              <div class="term-text-wrapper">
+                <div class="term-text">
+                  <h3>Підлягають компенсації витрати компанії на:</h3>
+                  <ul>
+                    <li>постановку автомобіля на облік</li>
+                    <li>3-5% до пенсійного фонду</li>
+                    <li>податок на розкіш ( за потреби )</li>
+                    <li>додаткову комплектацію (тех.пакет, сигналізація, охоронна супутникова система, MUL-T-LOCK, комплект зимових шин)</li>
+                  </ul>
+                </div>
+                <div class="custom-btn-wrapper">
+                  <button class="custom-btn">ОТРИМАТИ КОНСУЛЬТАЦІЮ</button>
+                </div>
+              </div>
+
+              <img src="img/term-img.png" alt="" class="term-img" />
+            </div>
+
+            <div class="term-bnf-box">
+              <div class="term-bnf">
+                <div class="term-bnf-num"><span>01</span></div>
+                <div class="term-bnf-text">Витрати розподіляються <strong>рівними частинами</strong> та входять у лізинговий платіж</div>
+              </div>
+              <div class="term-bnf">
+                <div class="term-bnf-num"><span>02</span></div>
+                <div class="term-bnf-text">
+                  Вартість об'єкта лізингу та розмір лізингових платежів розраховуються <strong>у гривні як еквівалент вартості у євро за курсом НБУ </strong>на дату підписання лізингового договору та
+                  підлягають перерахунку у разі зміни курсу на день оплати
+                </div>
+              </div>
+              <div class="term-bnf">
+                <div class="term-bnf-num"><span>03</span></div>
+                <div class="term-bnf-text">На весь термін дії лізингового договору нараховується фінансування у розмірі, що дорівнює <strong>відсотковій ставці банку-кредитора + 2%</strong></div>
+              </div>
+              <div class="term-bnf">
+                <div class="term-bnf-num"><span>04</span></div>
+                <div class="term-bnf-text">Стандартне технічне <strong>обслуговування проводиться на СТО лізингодавця</strong> та оплачується лізингоодержувачем самостійно згідно рахунків-фактур</div>
+              </div>
+              <div class="term-bnf">
+                <div class="term-bnf-num"><span>05</span></div>
+                <div class="term-bnf-text">
+                  Стандартний термін дії договору лізингу становить <strong>36</strong> місяців. Залишкова вартість об'єкта лізингу становить <strong>20%</strong>. Після закінчення терміну договору
+                  лізингу об'єкт лізингу підлягає продажу лізингоодержувачу <strong>за залишковою вартістю</strong>
+                </div>
+              </div>
+              <div class="term-bnf">
+                <div class="term-bnf-num"><span>06</span></div>
+                <div class="term-bnf-text">Кредитні кошти залучаються на<strong> фінансування 70%</strong> вартості об'єкта лізингу</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="applic">
+      <div class="container">
+        <div class="ellipse-oval widescreen"></div>
+        <div class="row">
+          <div class="col">
+            <div class="ellipse-oval smallscreen"></div>
+
+            <div class="applic-inner">
+              <img src="img/applic-img.png" alt="" class="applic-img absolute" />
+              <h2 class="h2-title applic-ani">
+                <span class="gradient-dark"
+                  >Заява отримання <br />
+                  лізингових засобів</span
+                >
+                <br />
+                <strong>
+                  розглядається протягом <br />
+                  трьох робочих днів</strong
+                >
+              </h2>
+
+              <div class="beefup-box applic-ani">
+                <div class="beefup">
+                  <div class="beefup__head"><span class="gradient-blue-span">ДЛЯ ЮРИДИЧНИХ ОСІБ</span></div>
+                  <div class="beefup__body">
+                    <p>
+                      Cвідоцтво про реєстрацію, статут, довідка платника ПДВ, актуальний витяг, паспорт та ІПН керівника, баланс за два останні звітні періоди з фінансовими результатами та
+                      розшифровкою дебіторської та кредиторської заборгованостей, специфікація на об'єкт лізингу, техн. умови для організації виробництва та використання обладнання, що надається у
+                      лізинг
+                    </p>
+                  </div>
+                </div>
+                <div class="beefup">
+                  <div class="beefup__head"><span class="gradient-blue-span">ДЛЯ фізичних ОСІБ</span></div>
+                  <div class="beefup__body">
+                    <p>
+                      Cвідоцтво про реєстрацію, статут, довідка платника ПДВ, актуальний витяг, паспорт та ІПН керівника, баланс за два останні звітні періоди з фінансовими результатами та
+                      розшифровкою дебіторської та кредиторської заборгованостей, специфікація на об'єкт лізингу, техн. умови для організації виробництва та використання обладнання, що надається у
+                      лізинг
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="custom-text applic-ani">
+                <p>Разом із позитивною відповіддю клієнту надається на підписання <strong style="color: #066bcf">договір лізингу</strong> з розрахунками лізингових платежів.</p>
+                <p>За більш детальною інформацією щодо умов лізингу звертайтесь за <strong style="color: #066bcf">контактною інформацією компанії.</strong></p>
+              </div>
+
+              <div class="custom-btn-wrapper applic-ani">
+                <button class="custom-btn">ОТРИМАТИ КОНСУЛЬТАЦІЮ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="ellipse-oval widescreen"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="ellipse-oval smallscreen"></div>
+
+            <h2 class="h2-title">КОНТАКТИ</h2>
+            <div class="contact-sub"><span class="gradient-blue-span">Послуги надає ТОВ ПН-АВТО</span></div>
+
+            <div class="contact-item address">
+              <div class="contact-item-title">Адреса:</div>
+              <div class="contact-item-info">м. Київ, пр-кт <br />Лобановського 119А</div>
+            </div>
+            <div class="contact-item tel">
+              <div class="contact-item-title">Телефони:</div>
+              <div class="contact-item-info">
+                <a href="#">044 465 7354 </a>
+                <a href="#"> 073 778 3333</a>
+              </div>
+            </div>
+            <div class="contact-item email">
+              <div class="contact-item-title">Пошта:</div>
+              <div class="contact-item-info">
+                <a href="#">sprentalcars@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="custom-btn-wrapper">
+              <button class="custom-btn">ОТРИМАТИ КОНСУЛЬТАЦІЮ</button>
+            </div>
+
+            <div class="map">
+              <img src="img/ukraine-map.png" alt="" class="ukraine-map" />
+              <div class="map-item kyiv">
+                <div class="map-inner">
+                  <div class="map-text-1">Адреса станції прокату</div>
+                  <strong class="gradient-blue-span">у Києві </strong>
+                  <div class="map-text-2">
+                    проспект Валерія <br />
+                    Лобановського, 119
+                  </div>
+                </div>
+              </div>
+              <div class="map-item lviv">
+                <div class="map-inner">
+                  <div class="map-text-1">Адреса станції прокату</div>
+                  <strong class="gradient-blue-span">у Львові</strong>
+                  <div class="map-text-2">
+                    вулиця Стрийська, 32, <br />
+                    Сокільники, Львівська <br />
+                    область
+                  </div>
+                </div>
+              </div>
+              <div class="map-item dnipro">
+                <div class="map-inner">
+                  <div class="map-text-1">Адреса станції прокату</div>
+                  <strong class="gradient-blue-span">у Дніпрі </strong>
+                  <div class="map-text-2">
+                    вулиця Яснополянська, 1, <br />
+                    Дніпропетровська <br />
+                    область
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-inner">
+              <div class="credits">© 2024 SRC | special rental car</div>
+              <a href="#" class="footer-logo">
+                <img src="img/logo.svg" alt="" />
+              </a>
+              <div class="credits">усі права захищені</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.beefup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
+    <!-- <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.beefup.min.js"></script>
+
+    -->
+
+    <!-- <script src="js/libs.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
